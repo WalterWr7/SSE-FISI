@@ -1,0 +1,10 @@
+<div height="100px" width="960px">
+		<vbox>
+			<hbox width="100%">
+				<!-- LOGO 1 IZQUIERDA -->
+				<div align="left" width="100%">
+					<image src="media/botom_logo.png" />
+				</div>
+			</hbox>
+		</vbox>
+</div>

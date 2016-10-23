@@ -1,0 +1,44 @@
+<?page title="Sistema"?>
+<zk>
+	<div align="center">
+		<style dynamic="true">
+			.seguridad{ font-sizeinf: 14px; color: #ff0000;
+			white-space:pre; }
+		</style>
+		<div align="center" height="140px">
+			<include src="logo.zul" />
+		</div>
+		<window width="960px" apply="com.softwarecenter.po.PO_Registrar">
+
+
+			<groupbox mold="3d" width="380px">
+				<caption style="font-size:16px"
+					label="Registrar Egresado" height="25px">
+				</caption>
+				<separator height="15px"></separator>
+				<div align="left" width="230px">
+					<vbox spacing="5px">
+						<label>DNI</label>
+						<textbox id="dni" height="21px" width="230px"
+							style="font-size:16px;text-transform: uppercase">
+						</textbox>
+					</vbox>
+					<separator height="10px"></separator>
+					<vbox spacing="5px">
+						<label>Código Universitario</label>
+						<textbox id="codigo" height="21px" width="230px"
+							style="font-size:16px">
+						</textbox>
+					</vbox>
+					<separator height="15px"></separator>
+					<div align="right">
+						<button width="100px" id="btn_validar"
+							label="Validar" height="30px"
+							style="font-weight:bold; font-size:13px;" />
+					</div>
+				</div>
+				<separator height="15px"></separator>
+			</groupbox>
+		</window>
+	</div>
+</zk>

@@ -1,0 +1,26 @@
+<window id="modalDialog" title="PIN" border="normal"
+	width="460px" apply="com.softwarecenter.po.PO_Info"
+	position="center,center" closable="true"
+	action="show: slideDown;hide: slideUp">
+	<vlayout>
+		<grid>
+			<columns>
+				<column hflex="1" label="" />
+				<column hflex="2" label="" align="" />
+			</columns>
+			<rows>
+				<row>
+					<label>PIN:</label>
+					<hbox>
+						<textbox id="tx_pin" value="" type="password"></textbox>
+						<label id="l_pin"
+							style="color:#FF0000; font-weight:bold;">
+							*
+						</label>
+					</hbox>
+				</row>
+			</rows>
+		</grid>
+		<button id="b_firmar" hflex="1" label="Firmar" />
+	</vlayout>
+</window>

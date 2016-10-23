@@ -1,0 +1,526 @@
+<zk xmlns:html="http://www.w3.org/1999/xhtml">
+	<div align="center">
+		<div align="center" height="105px">
+			<include src="header.zul" />
+		</div>
+		<window width="960px" apply="com.softwarecenter.po.PO_Encuesta"
+			id="w">
+
+			<div align="center">
+				<groupbox mold="3d">
+					<caption
+						label="Evaluación para el siguimiento de Egresados"
+						style="font-size:16px" height="25px" />
+					<div align="center">
+						<html:p />
+						<groupbox mold="3d" width="920px">
+							<caption id="c_info" label="aa" />
+
+							<html:p />
+							<div width="900px" align="center">
+								<radiogroup id="rg_p1" />
+								<radiogroup id="rg_p2" />
+
+								<grid fixedLayout="true"
+									width="900px">
+									<columns>
+										<column align="left"></column>
+									</columns>
+									<rows>
+										<row>
+											<vbox>
+												<label>
+													I. DATOS ACADEMICOS
+												</label>
+												<label>
+													1. Actualmente,
+													¿Cuál es su
+													situación académica?
+												</label>
+												<hbox>
+													<radio id="rd_p1_1"
+														label="Titulado" radiogroup="rg_p1" />
+													<radio id="rd_p1_2"
+														label="No Titulado" radiogroup="rg_p1" />
+												</hbox>
+												<hbox id="hb_p1"></hbox>
+											</vbox>
+										</row>
+										<row>
+											<vbox>
+												<label>
+													2. ¿Cuál es su
+													máximo grado
+													académico?
+												</label>
+												<vbox>
+													<radio 
+														label="Posdoctorado (PhD)" radiogroup="rg_p2" />
+													<radio 
+														label="Doctor" radiogroup="rg_p2" />
+													<radio 
+														label="Magister" radiogroup="rg_p2" />
+													<radio 
+														label="Bachiller" radiogroup="rg_p2" />
+												</vbox>
+											</vbox>
+										</row>
+										<row>
+											<vbox>
+												<label>3. Estudios de Posgrado en otras instituciones:</label>
+												<grid>
+													<auxhead>
+														<auxheader colspan="4" />
+													</auxhead>
+													<columns>
+														<column hflex="4">
+															Tipo Institución
+														</column>
+														<column hflex="4">
+															Nombre Inst.
+														</column>
+														<column hflex="4">
+															Programa
+														</column>
+														<column hflex="4">
+															Area
+														</column>
+														<column hflex="4">
+															Tipo Formación
+														</column>
+														<column hflex="4">
+															F.Ingreso
+														</column>
+														<column hflex="4">
+															F.Egreso
+														</column>
+														<column hflex="4">
+															F.Grado
+														</column>
+													</columns>
+													<rows
+														sclass="narrow">
+														<row>
+															<label value="Privada" />
+															<textbox />	
+															<textbox />
+															<textbox />
+															<textbox />
+															<textbox />
+															<textbox />
+															<textbox />
+														</row>
+														<row>
+															<label value="Pública" />
+															<textbox />	
+															<textbox />
+															<textbox />
+															<textbox />
+															<textbox />
+															<textbox />
+															<textbox />
+														</row>
+													</rows>
+												</grid>
+											</vbox>
+										</row>
+										<row>
+											<vbox>
+												<label>
+													II. SATISFACCIÓN Y FORMACIÓN ACADÉMICA
+												</label>
+												<label>
+													9. Como egresado, ¿En qué porcentaje estima que la EAPIS cubrió sus expectativas?
+												</label>
+												<hbox>
+													<radio 
+														label="0%" radiogroup="rg_p2" />
+													<radio 
+														label="25%" radiogroup="rg_p2" />
+													<radio 
+														label="50%" radiogroup="rg_p2" />
+													<radio 
+														label="75%" radiogroup="rg_p2" />
+													<radio 
+														label="100%" radiogroup="rg_p2" />
+												</hbox>
+											</vbox>
+										</row>
+										<row>
+											<vbox>
+												<label>
+													10. ¿Recomendaría la formación que ofrece la EAPIS?
+												</label>
+												<hbox>
+													<radio 
+														label="Si" radiogroup="rg_p2" />
+													<radio 
+														label="No" radiogroup="rg_p2" />
+												</hbox>
+											</vbox>
+										</row>
+										<row>
+											<vbox>
+												<label>
+													11. Valore los diferentes componentes del Plan de Estudios de la EAPIS.
+												</label>
+												<label>
+													En cada celda escriba el número que corresponda con su opinión de acuerdo a la siguiente escala:
+												</label>
+												<label>
+													0. Nada relevante 1. Poco relevante 2. Medianamente relevante 3. Muy relevante
+												</label>
+												<label>
+													Que tan relevante para su desempeño profesional considera que fue el área:
+												</label>
+												<grid>
+													<auxhead>
+														<auxheader colspan="3" />
+													</auxhead>
+													<columns>
+														<column hflex="4">
+															Área
+														</column>
+														<column hflex="4">
+															Cursos
+														</column>
+														<column hflex="4">
+															Valoración
+														</column>
+													</columns>
+													<rows sclass="narrow">
+														<row>
+															<label value="Desarrollo Personal" />
+															<label value="Comunicación y Dinámica de Grupo, Ética de la Profesión, Creatividad y Liderazgo, Realidad Nacional" />
+															<intbox />
+														</row>
+														<row>
+															<label value="Ciencias Básicas" />
+															<label value="Matematica Básica I,Calculo I,Calculo II,Matemática Básica II,Fisica General,Series y Ecuaciones Diferenciales,Estadistica I,Física General II,Matemática Discreta,Métodos Numéricos,Estadística II" />
+															<intbox />
+														</row>
+														<row>
+															<label value="Ciencias Empresariales" />
+															<label value="Organización y Administración,Economia,Contabilidad General,Ingeniería Económica,Finanzas para la Gestión,Marketing" />
+															<intbox />
+														</row>
+														<row>
+															<label value="Formación Profesional General" />
+															<label value="Teoria General de Sistemas,Introducción a la Computación,Algoritmica I,Algoritmica II, Estructura de Datos,Modelamiento de Negocios,Base de Datos,Investigación Operativa I, Análisis de Sistemas de Información,Análisis y Diseño de Algoritmos,Diseño de Sistemas de Información,Administración de Base de Datos,Investigación Operativa II,Computación Visual, Lenguajes y Traductores,Taller de Desarrollo,Inteligencia Artificial,Ingeniería de Software, Calidad de Software,Sistemas Operativos,Modelos y Simulación de Sistemas,Ingeniería de Información,Sistemas Inteligentes,Derecho Informático,Arquitectura Empresarial,Datawarehouse,Auditoría Informática, Seguridad de Información,Sistemas Distribuidos,Integración de Sistemas,Computación Móvil" />
+															<intbox />
+														</row>
+														<row>
+															<label value="Sistema de Computadoras, Redes y Comunicaciones" />
+															<label value="Principios Digitales,Organización de Computadoras,Interface Hombre-Computador,Redes y Transmisión de Datos" />
+															<intbox />
+														</row>
+														<row>
+															<label value="Gestión de Proyectos" />
+															<label value="Formulación y Evaluación de Proyectos,Gestión de Tecnologías de la Información,Gerencia de Proyectos" />
+															<intbox />
+														</row>
+														<row>
+															<label value="Formulación de Tesis de Grado" />
+															<label value="Estrategias de Aprendizaje e Investigación,Proyecto de Tesis,Desarrollo de Tesis I,Desarrollo de Tesis II" />
+															<intbox />
+														</row>
+														<row>
+															<label value="Electivos" />
+															<label value="Ingeniería de Redes,Ingeniería de Control,Ingeniería Web,Gestión del Conocimiento,Sistemas de Información Geográficos,e-Business,Redes Neuronales,Cloud Computing,Planeamiento de Recursos Empresariales,Robótica,Inteligencia de Negocios" />
+															<intbox />
+														</row>
+													</rows>
+												</grid>
+											</vbox>
+										</row>
+										<row>
+											<vbox>
+												<label>
+													12. De la lista que se describen a continuación, ¿En qué nivel de formación considera usted que desarrollo durante su carrera las siguientes competencias?
+												</label>
+												<grid>
+													<auxhead>
+														<auxheader colspan="2" />
+													</auxhead>
+													<columns>
+														<column hflex="4">
+															Competencias, habilidades, destrezas
+														</column>
+														<column hflex="4">
+															Estimación: 20% 40% 60% 80% 100%
+														</column>
+													</columns>
+													<rows sclass="narrow">
+														<row>
+															<label value="Competencias para el desempeño profesional en fábricas de software" />
+															<intbox />
+														</row>
+														<row>
+															<label value="Competencias para la administración de redes,servidores e infraestructura tecnológica" />
+															<intbox />
+														</row>
+														<row>
+															<label value="Competencias para implementación de Sistemas de Inteligencia de Negocios,Datawarehouse y Big Data" />
+															<intbox />
+														</row>
+														<row>
+															<label value="Competencias para el desempeño en proyectos de Investigación" />
+															<intbox />
+														</row>
+														<row>
+															<label value="Competencias para la Gestión de Proyectos" />
+															<intbox />
+														</row>
+														<row>
+															<label value="Competencias de dirección de Unidades Informáticas" />
+															<intbox />
+														</row>
+														<row>
+															<label value="Competencias para ejercicio de Docencia" />
+															<intbox />
+														</row>
+														<row>
+															<label value="Capacidad para autoaprendizaje de nuevas tecnologías" />
+															<intbox />
+														</row>
+														<row>
+															<label value="Competencias en habilidades blandas y comunicativas" />
+															<intbox />
+														</row>
+														<row>
+															<label value="Competencias para emprendimiento de empresas del rubro de la especialidad profesional" />
+															<intbox />
+														</row>
+													</rows>
+												</grid>
+											</vbox>
+										</row>
+										<row>
+											<vbox>
+												<label>
+													13. ¿Qué nivel de impacto tuvo el servicio social de bienestar universitario (movilidad interna, comedor universitario, entre otros) para el desarrollo de sus actividades profesionales?
+												</label>
+												<hbox>
+													<radio 
+														label="0%" radiogroup="rg_p2" />
+													<radio 
+														label="25%" radiogroup="rg_p2" />
+													<radio 
+														label="50%" radiogroup="rg_p2" />
+													<radio 
+														label="75%" radiogroup="rg_p2" />
+													<radio 
+														label="100%" radiogroup="rg_p2" />
+												</hbox>
+											</vbox>
+										</row>
+										<row>
+											<vbox>
+												<label>
+													IV. DESEMPEÑO PROFESIONAL
+												</label>
+												<label>
+													14. ¿Trabaja actualmente?
+												</label>
+												<hbox>
+													<radio 
+														label="Si" radiogroup="rg_p2" />
+													<radio 
+														label="No" radiogroup="rg_p2" />													
+												</hbox>
+											</vbox>
+										</row>
+										<row>
+											<vbox>												
+												<label>
+													15. El empleo que tiene, ¿En qué nivel considera que se relaciona con su carrera?
+												</label>
+												<hbox>
+													<radio 
+														label="0%" radiogroup="rg_p2" />
+													<radio 
+														label="25%" radiogroup="rg_p2" />
+													<radio 
+														label="50%" radiogroup="rg_p2" />
+													<radio 
+														label="75%" radiogroup="rg_p2" />
+													<radio 
+														label="100%" radiogroup="rg_p2" />
+												</hbox>
+											</vbox>
+										</row>
+										<row>
+											<vbox>												
+												<label>
+													16. Cual es su percepción mensual aproximado según el siguiente rango.
+												</label>
+												<vbox>
+													<radio 
+														label="Menos de S/.1,500" radiogroup="rg_p2" />
+													<radio 
+														label="De S/.1,500 a S/.3,000" radiogroup="rg_p2" />
+													<radio 
+														label="De S/.3,000 a S/.5,000" radiogroup="rg_p2" />
+													<radio 
+														label="De S/.5,000 a S/.10,000" radiogroup="rg_p2" />
+													<radio 
+														label="Más de S/.10,000" radiogroup="rg_p2" />
+												</vbox>
+											</vbox>
+										</row>
+										<row>
+											<vbox>												
+												<label>
+													17. ¿A qué grupo de la actividad económica pertenece la empresa o institución en la cual labora?
+												</label>
+												<vbox>
+													<radio 
+														label="Primaria (Extractivo, agricultura, pesca, ganadería, minería)" radiogroup="rg_p2" />
+													<radio 
+														label="Secundaria (Industrial, manufactura, transformación)" radiogroup="rg_p2" />
+													<radio 
+														label="Terciaria (Servicio, comercio, educativo, gobierno, salud)" radiogroup="rg_p2" />
+												</vbox>
+											</vbox>
+										</row>
+										<row>
+											<vbox>												
+												<label>
+													18. ¿En qué sector laboral se encuentra? (seleccione solo un sector y la opción que le corresponda)
+												</label>
+												<vbox>
+													<radio 
+														label="Sector público" radiogroup="rg_p2" />
+													<radio 
+														label="Sector privado" radiogroup="rg_p2" />
+													<radio 
+														label="Profesional independiente" radiogroup="rg_p2" />
+													<radio 
+														label="Organismo No Gubernamental" radiogroup="rg_p2" />
+													<radio 
+														label="Otro" radiogroup="rg_p2" />
+												</vbox>
+											</vbox>
+										</row>
+										<row>
+											<vbox>												
+												<label>
+													19. Por parte de usted, ¿Qué nivel de satisfacción tiene con respecto a su trabajo?
+												</label>
+												<hbox>
+													<radio 
+														label="0%" radiogroup="rg_p2" />
+													<radio 
+														label="25%" radiogroup="rg_p2" />
+													<radio 
+														label="50%" radiogroup="rg_p2" />
+													<radio 
+														label="75%" radiogroup="rg_p2" />
+													<radio 
+														label="100%" radiogroup="rg_p2" />
+												</hbox>
+											</vbox>
+										</row>
+										<row>
+											<vbox>
+												<label>
+													20. ¿Ha sido alguna vez promovido de puesto?
+												</label>
+												<hbox>
+													<radio 
+														label="Si" radiogroup="rg_p2" />
+													<radio 
+														label="No" radiogroup="rg_p2" />													
+												</hbox>
+											</vbox>
+										</row>
+										<row>
+											<vbox>												
+												<label>
+													21. Si es así, ¿Cuáles fueron los factores que determinaron su promoción?
+												</label>
+												<vbox>
+													<radio 
+														label="La continua preparación académica" radiogroup="rg_p2" />
+													<radio 
+														label="Relaciones Humanas" radiogroup="rg_p2" />
+													<radio 
+														label="Cursos y seminarios de actualización" radiogroup="rg_p2" />
+													<radio 
+														label="Antigüedad en el puesto" radiogroup="rg_p2" />
+													<radio 
+														label="Conocimiento de la empresa" radiogroup="rg_p2" />
+													<radio 
+														label="Otro" radiogroup="rg_p2" />
+												</vbox>
+											</vbox>
+										</row>
+										<row>
+											<vbox>
+												<label>
+													22. ¿Pertenece a un Colegio Profesional?
+												</label>
+												<hbox>
+													<radio 
+														label="Si" radiogroup="rg_p2" />
+													<radio 
+														label="No" radiogroup="rg_p2" />													
+												</hbox>
+											</vbox>
+										</row>
+										<row>
+											<vbox>
+												<label>
+													23. ¿Esta certificado por un Colegio Profesional?
+												</label>
+												<hbox>
+													<radio 
+														label="Si" radiogroup="rg_p2" />
+													<radio 
+														label="No" radiogroup="rg_p2" />													
+												</hbox>
+											</vbox>
+										</row>
+										<row>
+											<vbox>												
+												<label>
+													24. ¿Cuál es su apreciación en relación a las oportunidades laborales para desempeñarse profesionalmente en el Perú?
+												</label>
+												<vbox>
+													<radio 
+														label="La continua preparación académica" radiogroup="rg_p2" />
+													<radio 
+														label="Relaciones Humanas" radiogroup="rg_p2" />
+													<radio 
+														label="Cursos y seminarios de actualización" radiogroup="rg_p2" />
+													<radio 
+														label="Antigüedad en el puesto" radiogroup="rg_p2" />
+													<radio 
+														label="Conocimiento de la empresa" radiogroup="rg_p2" />
+													<radio 
+														label="Otro" radiogroup="rg_p2" />
+												</vbox>
+											</vbox>
+										</row>
+									</rows>
+								</grid>
+								<html:p />
+								<div align="center">
+									<button label="Generar"
+										id="b_crear">
+									</button>
+									<button label="Firmar"
+										id="b_firmar">
+									</button>
+									<button label="Descargar"
+										id="b_descargar">
+									</button>
+								</div>
+							</div>
+						</groupbox>
+					</div>
+				</groupbox>
+			</div>
+		</window>
+	</div>
+</zk>

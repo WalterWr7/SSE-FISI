@@ -1,0 +1,141 @@
+<?page id="head" style="background: #ffffff; height: 100% ; margin-left:0pt" title="Proyecto Base" contentType="text/html;charset=UTF-8"?>
+<zk xmlns:html="http://www.w3.org/1999/xhtml">
+	<style dynamic="true">
+		.z-label, .z-radio-cnt, .z-checkbox-cnt, input.button,
+		input.file, .z-loading { color: #000000;
+		font-family:arial,garamond,helvetica; 
+		font-size:10px;
+		}
+
+		.z-menu-item-body{ color: #ffffff;
+		font-family:arial,garamond,helvetica; 
+		font-size:9px;}
+
+		.z-menubar-hor .z-menu, .z-menubar-hor .z-menu-item,
+		.z-menubar-hor .z-menu-btn, .z-menubar-hor .z-menu-item-btn,
+		.z-menubar-hor span, .z-menubar-hor a, .z-menubar-hor div,
+		.z-menubar-ver .z-menu, .z-menubar-ver .z-menu-item,
+		.z-menubar-ver .z-menu-btn, .z-menubar-ver .z-menu-item-btn,
+		.z-menubar-ver span, .z-menubar-ver a, .z-menubar-ver div,
+		.z-menu-cnt, .z-menu-item-cnt {
+
+		color:#000000;
+		font-size:9px;
+		}
+
+		.z-menu-popup-cnt .z-menu a.z-menu-cnt, .z-menu-popup-cnt
+		.z-menu-item a.z-menu-item-cnt { color:#000000; font-size:9px;}
+
+		.z-west-header, .z-center-header, .z-east-header,
+		.z-north-header, .z-south-header { color:#000000; font-size:10px;}
+
+		div.z-column-cnt{ color:#000000; } div.z-row-cnt {
+		color:#000000;font-size:10px;}
+		
+		div.z-footer-cnt, div.z-row-cnt, div.z-group-cnt, div.z-groupfoot-cnt, div.z-column-cnt {
+			font-size:10px;
+		}
+
+		div.z-listfooter-cnt, div.z-listcell-cnt{ color:#000000; font-size:10px;
+		}
+		td.z-row-inner{
+		}
+		div.z-listheader-cnt {
+		font-size:10px;
+		}
+		
+		.z-textbox, .z-decimalbox, .z-intbox, .z-longbox, .z-doublebox {
+		font-size:10px;
+		}
+
+		div.z-listheader-cnt{ color:#000000; } .z-caption .z-caption-l{
+		font-size:10px;
+		color:#000000; font-weight:bold; }
+		
+		.z-combobox-rounded-inp, .z-bandbox-rounded-inp, .z-datebox-rounded-inp, .z-timebox-rounded-inp, .z-spinner-rounded-inp, .z-combobox-inp, .z-bandbox-inp, .z-datebox-inp, .z-timebox-inp, .z-spinner-inp {
+		font-size:9px;
+		}
+		
+		.z-combobox-rounded-pp .z-comboitem-text, .z-combobox-rounded-pp .z-comboitem-btn, .z-combobox-pp .z-comboitem-text, .z-combobox-pp .z-comboitem-btn {
+		font-size:9px;
+		}
+		
+		.z-button-os {
+			font-size:10px;
+		}
+		
+		.z-toolbarbutton-cnt {
+			font-size:10px;
+		}
+		
+		.z-datebox-rounded-pp, .z-datebox-pp   {
+			font-size:10px;
+		}
+		
+		.z-calendar {
+			font-size:10px;
+		}
+		
+		.z-calendar-caldayrow td, .z-calendar td a, .z-calendar td a:visited{
+		font-size:10px;
+		}
+		
+		.z-a {
+		font-size:10px;
+		}
+		
+		div.z-treefooter-cnt, div.z-treecell-cnt, div.z-treecol-cnt {
+		font-size:10px;
+		}
+		
+		span.z-progressmeter-img {
+			height:27px;
+		}
+		
+		.input-area { margin: 0 3px;
+			border-top: 1px solid #ECECEC; } 
+		.input-area .z-textbox {
+			border: 0 none; }
+		span.name {
+    		font-size: 10px;
+   			display: block;
+    		width: 50px;
+    		text-align: right;
+    		font-weight: bold;
+		}
+	
+		tr.z-listitem-disd *, td.z-listcell-disd * {
+    		color: #4B4B4B !important;
+    		cursor: default !important;
+		}
+		
+		.log {
+			white-space:pre; 
+			font-family: monospace;
+		}
+		
+	</style>
+	<div height="100px" width="960px">
+		<vbox>
+			<hbox width="100%">
+				<div align="left" width="100%">
+					<image src="media/botom_logo.png" id="mainlogo"/>
+				</div>
+			</hbox>
+			<hbox width="100%" widths="90%,10%">
+				<menubar id="menu_principal" 
+				use="com.softwarecenter.po.PO_Menu"/>
+<!-- 				<hbox pack="center" align="center" height="27px"> -->
+<!-- 				<timer id="spet_timer" delay="30000" running="false" repeats="true"> -->
+<!-- 				</timer> -->
+<!-- 				<progressmeter height="24px" id="spet_pm" value="0" /> -->
+<!-- 				</hbox> -->
+				<menubar>
+					<menuitem id="menu_user"></menuitem>
+				</menubar>
+			</hbox> 
+		</vbox>
+
+	</div>
+
+</zk>

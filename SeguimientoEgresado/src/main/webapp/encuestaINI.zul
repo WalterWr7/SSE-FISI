@@ -1,0 +1,20 @@
+<window id="modalDialog" title="PIN" border="normal" width="650px"
+	apply="com.softwarecenter.po.PO_EncuestaINI" position="center,center"
+	closable="true" action="show: slideDown;hide: slideUp">
+	<vlayout>
+		<label>ENCUESTA DE SEGUIMIENTO DE EGRESADO</label>
+	
+		<groupbox>
+			<caption label="Dats Académicos" />
+			<grid id="grip_encuesta">
+				<columns>
+					<column></column>
+				</columns>
+				<rows>					
+				</rows>
+			</grid>
+			<button width="50px" id="btn_iniciar" label="Iniciar"	height="30px" />
+			<button width="50px" id="btn_siguiente" label="Siguiente>"	height="30px" />
+		</groupbox>
+	</vlayout>
+</window>

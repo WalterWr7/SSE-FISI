@@ -1,0 +1,98 @@
+<window id="modalDialog" title="PIN" border="normal" width="650px"
+	apply="com.softwarecenter.po.PO_Bienvenido" position="center,center"
+	closable="true" action="show: slideDown;hide: slideUp">
+	<vlayout>
+		<hbox>
+			<label>icon</label>
+			<vbox>
+				<label>BIENVENIDO A SSE - FISI</label>
+				<label>WWWWW</label>
+			</vbox>
+			<button width="50px" id="btn_encuesta" label=">"
+				height="30px" style="font-weight:bold; font-size:13px;" />
+		</hbox>
+
+		<groupbox>
+			<caption label="Datos Generales" />
+			<grid>
+				<columns>
+					<column hflex="4"></column>
+					<column hflex="4"></column>
+					<column hflex="4"></column>
+					<column hflex="4"></column>
+				</columns>
+				<rows>
+					<row>
+						<label value="DNI:" />
+						<label value="564545564" />
+
+						<label value="Tel. Fijo:" />
+						<label value="57897811" />
+					</row>
+					<row>
+						<label value="Tel. Celular" />
+						<label value="91565456" />
+
+						<label value="AAA" />
+						<label value="BBB" />
+					</row>
+					<row>
+						<label value="Direccion Actual:" />
+						<label value="91565456" />
+
+						<label value="Distrito:" />
+						<label value="BBB" />
+					</row>
+					<row>
+						<label value="Departamento:" />
+						<label value="91565456" />
+
+						<label value="Provincia:" />
+						<label value="BBB" />
+					</row>
+				</rows>
+			</grid>
+		</groupbox>
+		<groupbox>
+			<caption label="Dats Académicos" />
+			<grid>
+				<columns>
+					<column hflex="4"></column>
+					<column hflex="4"></column>
+					<column hflex="4"></column>
+					<column hflex="4"></column>
+				</columns>
+				<rows>
+					<row>
+						<label value="Código:" />
+						<label value="564545564" />
+
+						<label value="Facultad" />
+						<label value="57897811" />
+					</row>
+					<row>
+						<label value="EAP:" />
+						<label value="91565456" />
+
+						<label value="Tipo de Formción" />
+						<label value="BBB" />
+					</row>
+					<row>
+						<label value="F. de Egreso:" />
+						<label value="91565456" />
+
+						<label value="F. de Greado:" />
+						<label value="BBB" />
+					</row>
+					<row>
+						<label value="F. de Título:" />
+						<label value="91565" />
+
+						<label value="AAAA" />
+						<label value="BBB" />
+					</row>
+				</rows>
+			</grid>
+		</groupbox>
+	</vlayout>
+</window>

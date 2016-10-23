@@ -1,0 +1,48 @@
+<?page title="Sistema"?>
+<zk>
+	<div align="center">
+		<style dynamic="true">
+			.seguridad{ font-sizeinf: 14px; color: #ff0000;
+			white-space:pre; }
+		</style>
+		<div align="center" height="140px">
+			<include src="logo.zul" />
+		</div>
+		<window width="960px" apply="com.softwarecenter.po.PO_Login">
+
+
+			<groupbox mold="3d" width="380px">
+				<caption style="font-size:16px"
+					label="Ingresar al Sistema" height="25px">
+				</caption>
+				<separator height="15px"></separator>
+				<div align="left" width="230px">
+					<vbox spacing="5px">
+						<label>Usuario</label>
+						<textbox id="user" height="21px" width="230px"
+							style="font-size:16px;text-transform: uppercase">
+						</textbox>
+					</vbox>
+					<separator height="10px"></separator>
+					<vbox spacing="5px">
+						<label>Password</label>
+						<textbox id="pass" height="21px" width="230px"
+							style="font-size:16px" type="password">
+						</textbox>
+					</vbox>
+					<separator height="15px"></separator>
+					<div align="right">
+						<button width="100px" id="btn_registrar"
+							label="Registrar" height="30px"
+							style="font-weight:bold; font-size:13px;" />
+
+						<button width="100px" id="btn_ingresar"
+							label="Ingresar" height="30px"
+							style="font-weight:bold; font-size:13px;" />
+					</div>
+				</div>
+				<separator height="15px"></separator>
+			</groupbox>
+		</window>
+	</div>
+</zk>

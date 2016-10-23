@@ -1,0 +1,36 @@
+<zk>
+	<script type="text/javascript" src="media/blockster.js" />
+	<script type="text/javascript" defer="true">
+  			new Blockster({
+  						holder: '$slidesHolder',
+  						rows: 4,
+  						cols: 6,
+  						random: true,
+  						blockAnimSpeed: 30,
+  						startWithoutDelay: true,
+  						runOnceOnly:true
+  					});
+	</script>
+	<div align="center">
+		<div align="center" height="110px">
+			<include src="header.zul" />
+		</div>
+		<window width="960px">
+			<groupbox mold="3d">
+				<separator height="15px"></separator>
+				<div align="center" width="250px">
+					<label style="font-size:24px;color:#570214;font-style: italic; font-weight:bold">
+						Bienvenido!
+					</label>
+				</div>
+				<separator height="15px"></separator>
+				<div id='slidesHolder' style="background-repeat: no-repeat; width: 885px; height: 274px; position: relative; margin: 0 auto;">
+					<div></div>
+					<div style="background: url('media/collage.jpg'); width: 885px; height: 274px;">
+					</div>
+				</div>
+				<separator height="15px"></separator>
+			</groupbox>
+		</window>
+	</div>
+</zk>

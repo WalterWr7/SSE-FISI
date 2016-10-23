@@ -9,6 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.softwarecenter.domain.DTO_Alternativa;
 import com.softwarecenter.domain.DTO_Encuesta;
 import com.softwarecenter.domain.DTO_Pregunta;
+import com.softwarecenter.domain.DTO_Respuesta;
 import com.softwarecenter.mappers.EncuestaDAO;
 
 @Service
@@ -29,5 +30,10 @@ public class EncuestaService {
 	@Transactional
 	public List<DTO_Alternativa> getAlternativas(String id_encuesta, String id_pregunta){
 		return encuesta.getAlternativas(id_encuesta, id_pregunta);
+	}
+	
+	@Transactional
+	public void addRespuesta(DTO_Respuesta rpt){
+		encuesta.addRespuesta(rpt);
 	}
 }

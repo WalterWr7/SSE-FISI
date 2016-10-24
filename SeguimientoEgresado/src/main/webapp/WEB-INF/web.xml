@@ -197,9 +197,16 @@
 	</mime-mapping>
 
 	<welcome-file-list>
-		<welcome-file>login.zul</welcome-file>
-		<welcome-file>index.zhtml</welcome-file>
-		<welcome-file>index.html</welcome-file>
-		<welcome-file>index.htm</welcome-file>
+		<welcome-file>Escape</welcome-file>
 	</welcome-file-list>
+	<servlet>
+		<description></description>
+		<display-name>Escape</display-name>
+		<servlet-name>Escape</servlet-name>
+		<servlet-class>com.softwarecenter.po.Escape</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Escape</servlet-name>
+		<url-pattern>/Escape</url-pattern>
+	</servlet-mapping>
 </web-app>

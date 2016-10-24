@@ -2,8 +2,7 @@
 	apply="com.softwarecenter.po.PO_EncuestaINI" position="center,center"
 	closable="true" action="show: slideDown;hide: slideUp">
 	<vlayout>
-		<label>ENCUESTA DE SEGUIMIENTO DE EGRESADO</label>
-	
+		<label>ENCUESTA DE SEGUIMIENTO DE EGRESADO</label>	
 		<groupbox id="groupbox">
 			<caption label="Dats Académicos" />
 			<grid id="grip_encuesta">

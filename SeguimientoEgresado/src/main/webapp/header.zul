@@ -115,7 +115,7 @@
 		}
 		
 	</style>
-	<div height="100px" width="960px">
+	<div height="180x" width="960px">
 		<vbox>
 			<hbox width="100%">
 				<div align="left" width="100%">
@@ -124,7 +124,7 @@
 			</hbox>
 			<hbox width="100%" widths="90%,10%">
 				<menubar id="menu_principal" 
-				use="com.softwarecenter.po.PO_Menu"/>
+				use="com.softwarecenter.po.PO_Menu" width="780px"/>
 <!-- 				<hbox pack="center" align="center" height="27px"> -->
 <!-- 				<timer id="spet_timer" delay="30000" running="false" repeats="true"> -->
 <!-- 				</timer> -->

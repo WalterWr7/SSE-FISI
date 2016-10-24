@@ -12,7 +12,7 @@
   					});
 	</script>
 	<div align="center">
-		<div align="center" height="110px">
+		<div align="center" height="200px">
 			<include src="header.zul" />
 		</div>
 		<window width="960px">

@@ -15,7 +15,8 @@ public interface Constantes {
 
 	public static final String AUDIT_LOGIN_OK = "LGOK";
 	public static final String AUDIT_LOGIN_BAD = "LGE1";
-
+	
+	
 	/** Error de autenticación */
 	public static final int AUTH_ERROR = 100;
 	/** Parametro suministrado es invalido o nulo */
@@ -54,6 +55,15 @@ public interface Constantes {
 
 	/** usuario inactivo */
 	public static final int NO_ACTIVO = 115;
+	
+	/** falta datos */
+	public static final int MISSING_DATA = 116;
+	
+	/** No se encontro lo que se solicita en el SUM*/
+	public static final int NOT_FOUND_SUM = 117;
+	
+	/** No se encontro lo que se solicita en la RENIEC */
+	public static final int NOT_FOUND_RENIEC = 118;
 
 	/**
 	 * Llave para usuario de auditoria

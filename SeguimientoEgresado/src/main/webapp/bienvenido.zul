@@ -1,15 +1,18 @@
-<window id="modalDialog" title="PIN" border="normal" width="650px"
-	apply="com.softwarecenter.po.PO_Bienvenido" position="center,center"
-	closable="true" action="show: slideDown;hide: slideUp">
-	<vlayout>
-		<hbox>
-			<label>icon</label>
+<window id="modalDialog" title="BIENVENIDO" border="normal"
+	width="650px" apply="com.softwarecenter.po.PO_Bienvenido"
+	position="center,center" closable="true"
+	action="show: slideDown;hide: slideUp">
+	<vlayout id="v_p1">
+		<hbox>			
+			<image src="media/user_g.png" />
 			<vbox>
-				<label>BIENVENIDO A SSE - FISI</label>
-				<label>WWWWW</label>
+				<label style="font-size:14px; font-weight: bold;">BIENVENIDO A SSE - FISI</label>
+				<label style="font-size:14px" id="lb_nombre"></label>
 			</vbox>
-			<button width="50px" id="btn_encuesta" label=">"
+			<div align="right">
+				<button width="50px" id="btn_encuesta" label=">"
 				height="30px" style="font-weight:bold; font-size:13px;" />
+			</div>
 		</hbox>
 
 		<groupbox>
@@ -23,38 +26,38 @@
 				</columns>
 				<rows>
 					<row>
-						<label value="DNI:" />
-						<label value="564545564" />
+						<label value="DNI:" style="font-weight: bold;"/>
+						<label id="lb_dni" value="" />
 
-						<label value="Tel. Fijo:" />
-						<label value="57897811" />
+						<label value="Tel. Fijo:" style="font-weight: bold;"/>
+						<label id="lb_telf_fijo" value="" />
 					</row>
 					<row>
-						<label value="Tel. Celular" />
-						<label value="91565456" />
+						<label value="Tel. Celular" style="font-weight: bold;"/>
+						<label id="lb_telf_cel" value="" />
 
-						<label value="AAA" />
-						<label value="BBB" />
+						<label value="" />
+						<label value="" />
 					</row>
 					<row>
-						<label value="Direccion Actual:" />
-						<label value="91565456" />
+						<label value="Direccion Actual:" style="font-weight: bold;"/>
+						<label id="lb_direccion" value="" />
 
-						<label value="Distrito:" />
-						<label value="BBB" />
+						<label value="Distrito:" style="font-weight: bold;"/>
+						<label id="lb_distrito" value="" />
 					</row>
 					<row>
-						<label value="Departamento:" />
-						<label value="91565456" />
+						<label value="Departamento:" style="font-weight: bold;"/>
+						<label id="lb_departamento" value="" />
 
-						<label value="Provincia:" />
-						<label value="BBB" />
+						<label value="Provincia:" style="font-weight: bold;"/>
+						<label id="lb_provincia" value="" />
 					</row>
 				</rows>
 			</grid>
 		</groupbox>
 		<groupbox>
-			<caption label="Dats Académicos" />
+			<caption label="Datos Académicos" />
 			<grid>
 				<columns>
 					<column hflex="4"></column>
@@ -64,35 +67,79 @@
 				</columns>
 				<rows>
 					<row>
-						<label value="Código:" />
-						<label value="564545564" />
+						<label value="Código:" style="font-weight: bold;"/>
+						<label id="lb_codigo" value="" />
 
-						<label value="Facultad" />
-						<label value="57897811" />
+						<label value="Facultad" style="font-weight: bold;"/>
+						<label id="lb_facultad" value="" />
 					</row>
 					<row>
-						<label value="EAP:" />
-						<label value="91565456" />
+						<label value="EAP:" style="font-weight: bold;" />
+						<label id="lb_eap" value="" />
 
-						<label value="Tipo de Formción" />
-						<label value="BBB" />
+						<label value="Tipo de Formción" style="font-weight: bold;"/>
+						<label id="ld_tipo_formacion" value="" />
 					</row>
 					<row>
-						<label value="F. de Egreso:" />
-						<label value="91565456" />
+						<label value="F. de Egreso:" style="font-weight: bold;"/>
+						<label id="lb_f_egreso" value="" />
 
-						<label value="F. de Greado:" />
-						<label value="BBB" />
+						<label value="F. de Grado:" style="font-weight: bold;"/>
+						<label id="lb_f_grado" value="" />
 					</row>
 					<row>
-						<label value="F. de Título:" />
-						<label value="91565" />
+						<label value="F. de Título:" style="font-weight: bold;"/>
+						<label id="lb_f_titulo" value="" />
 
-						<label value="AAAA" />
-						<label value="BBB" />
+						<label value="" />
+						<label value="" />
 					</row>
 				</rows>
 			</grid>
+		</groupbox>
+	</vlayout>
+	<vlayout id="v_p2" visible="false">
+		<label style="font-size:16; font-weight: bold;">ENCUESTA DE SEGUIMIENTO DE EGRESADO</label>
+
+		<groupbox id="groupbox">
+			<caption label="Dats Académicos" />
+			<grid id="grip_encuesta">
+				<columns>
+					<column></column>
+				</columns>
+				<rows></rows>
+			</grid>
+			<button width="100px" id="btn_siguiente" label="Siguiente>"
+				height="30px" />
+		</groupbox>
+	</vlayout>
+	<vlayout id="v_p3" visible="false">
+		<label style="font-size:16; font-weight: bold;">YA ERES PARTE DEL SSE - FISI</label>
+		<label style="font-size:14px" id="lb_b_codigo">CÓDIGO: </label>
+		<groupbox>
+			<caption label="Nuevo Usuario" />
+			<grid>
+				<columns>
+					<column></column>
+					<column></column>
+				</columns>
+				<rows>
+					<row>
+						<label>Nueva Contraseña:</label>
+						<textbox id="pass1" height="21px" width="230px"
+							style="font-size:16px" type="password">
+						</textbox>
+					</row>
+					<row>
+						<label>Repita Contraseña:</label>
+						<textbox id="pass2" height="21px" width="230px"
+							style="font-size:16px" type="password">
+						</textbox>
+					</row>
+				</rows>
+			</grid>
+			<button width="100px" id="btn_registrar" label="Registrar"
+				height="30px" />
 		</groupbox>
 	</vlayout>
 </window>

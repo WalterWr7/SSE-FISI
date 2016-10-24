@@ -5,7 +5,7 @@
 			.seguridad{ font-sizeinf: 14px; color: #ff0000;
 			white-space:pre; }
 		</style>
-		<div align="center" height="140px">
+		<div align="center" height="160px">
 			<include src="logo.zul" />
 		</div>
 		<window width="960px" apply="com.softwarecenter.po.PO_Login">
@@ -19,9 +19,9 @@
 				<div align="left" width="230px">
 					<vbox spacing="5px">
 						<label>Usuario</label>
-						<textbox id="user" height="21px" width="230px"
-							style="font-size:16px;text-transform: uppercase">
-						</textbox>
+						<intbox id="user" height="21px" width="230px"
+							style="font-size:16px">
+						</intbox>
 					</vbox>
 					<separator height="10px"></separator>
 					<vbox spacing="5px">

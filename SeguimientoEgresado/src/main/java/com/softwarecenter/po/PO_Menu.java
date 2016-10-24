@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.zkoss.zk.ui.Component;
 import org.zkoss.zk.ui.Executions;
+import org.zkoss.zk.ui.Session;
 import org.zkoss.zk.ui.event.Event;
 import org.zkoss.zk.ui.event.EventListener;
 import org.zkoss.zk.ui.event.Events;
@@ -24,14 +25,14 @@ public class PO_Menu extends Menubar{
 	public void onCreate() {
 		
 		// si se requiere un recurso entonces se requiere usuario logeado
-//		Session s = Executions.getCurrent().getSession();
-//		if(s == null) {
-//			throw new IllegalStateException("No se ha establecido sesion");
-//		}
-//		DTO_Usuario user = (DTO_Usuario) s.getAttribute("login");
-//		if(user == null) {
-//			throw new IllegalStateException("No se encontro usuario en la sesion");
-//		}
+		Session s = Executions.getCurrent().getSession();
+		if(s == null) {
+			throw new IllegalStateException("No se ha establecido sesion");
+		}
+		DTO_Usuario user = (DTO_Usuario) s.getAttribute("login");
+		if(user == null) {
+			throw new IllegalStateException("No se encontro usuario en la sesion");
+		}
 		
 //		PerfilRecursoService perfilRecursoService = (PerfilRecursoService) BaseWindow.getService("perfilRecursoService");
 //		DTO_Input input = new DTO_Input();
@@ -47,17 +48,12 @@ public class PO_Menu extends Menubar{
 		menubar.setVisible(true);
 		getItemMenuList(OpcionesDeMenu.itemMenu, menubar,recursos);
 		createMenuItemHref(new DTO_ItemMenu("op7","/Escape","media/icon/logout.png","Salir",null,null), menubar);
-//		createHelpItem(new DTO_ItemMenu("op8","/Escape","media/helpazul.png","Ayuda", null, null), menubar);
 		
 		if(getDesktop().getSession().getAttribute("login")!=null){
 			DTO_Usuario validado = (DTO_Usuario)getDesktop().getSession().getAttribute("login");
 			Menuitem menuitem = (Menuitem)this.getParent().getFellow("menu_user");
-			menuitem.setLabel("Usuario: "+validado.getUsername());
-		}
-		
-		//borrar
-		Menuitem menuitem = (Menuitem)this.getParent().getFellow("menu_user");
-		menuitem.setLabel("Usuario: ADMIN");	
+			menuitem.setLabel("Usuario: "+validado.getNombre_user());
+		}			
 	}
 
 //	public void createHelpItem(DTO_ItemMenu item, Component parent) {
